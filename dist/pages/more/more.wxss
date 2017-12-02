@@ -1,0 +1,84 @@
+@charset "UTF-8";
+/**
+ * ------------------------------------------------------------------
+ * 支持文件
+ * 需要引用的地方均需要加上这个支持文件
+ *
+ * ------------------------------------------------------------------
+ *
+ * @author  JeffMa
+ * @link    https://devework.com/
+ * @data    2017-06-11
+ */
+/**
+ * ------------------------------------------------------------------
+ * Sass Minxins
+ *
+ * 参考收集：
+ * https://github.com/twbs/bootstrap-sass/tree/master/assets/stylesheets/bootstrap/mixins
+ * ------------------------------------------------------------------
+ *
+ * @author  JeffMa
+ * @link    https://devework.com/
+ * @data    2017-06-11
+ */
+/**
+ * ------------------------------------------------------------------
+ * Sass 变量
+ *
+ * ------------------------------------------------------------------
+ *
+ * @author  JeffMa
+ * @link    https://devework.com/
+ * @data    2017-06-11
+ */
+.more__pre {
+  white-space: pre;
+  text-align: left;
+  overflow: auto;
+  border: 2rpx solid #ebebeb;
+  background-color: #f9f9f9;
+  padding-left: 10rpx;
+}
+
+.more__pre text {
+  font-size: 24rpx;
+}
+
+.more__banner-img {
+  width: 100%;
+  height: auto;
+}
+
+.more__header-title {
+  font-size: 52rpx;
+  margin-top: 40rpx;
+  font-weight: 500;
+}
+
+.more__header-desc {
+  font-size: 28rpx;
+  margin-top: 40rpx;
+}
+
+.more__header-link {
+  color: #5ba4e5;
+}
+
+.more__content {
+  margin-top: 80rpx;
+}
+
+.more__content-icons {
+  align-items: center;
+}
+
+.more__content-icons-item {
+  font-size: 0;
+  line-height: 0;
+}
+
+.more_qrcode {
+  width: 300rpx;
+  height: 300rpx;
+}
