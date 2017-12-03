@@ -60,7 +60,8 @@
             "Component": true,
             "Page": true,
             "getApp": true,
-            "wx": true
+            "wx": true,
+            "Behavior": true
         }
     }
 }
