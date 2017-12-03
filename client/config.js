@@ -1,28 +1,30 @@
 /**
- * 小程序配置文件
+ * ------------------------------------------------------------------
+ * WeApp-Workflow 配置文件
+ *
+ * 建议复制一份并重命名为 config.custom.js ，即可在config.custom.js 上根据需求进行配置
+ * ------------------------------------------------------------------
+ *
+ * @author  JeffMa
+ * @link    https://devework.com/
+ * @data    2017-06-11
  */
 
-// 此处主机域名修改成腾讯云解决方案分配的域名
-var host = 'https://75eopfcp.qcloud.la';
-
-var config = {
-
-    // 下面的地址配合云端 Demo 工作
-    service: {
-        host,
-
-        // 登录地址，用于建立会话
-        loginUrl: `${host}/weapp/login`,
-
-        // 测试的请求地址，用于测试会话
-        requestUrl: `${host}/weapp/user`,
-
-        // 测试的信道服务地址
-        tunnelUrl: `${host}/weapp/tunnel`,
-
-        // 上传图片接口
-        uploadUrl: `${host}/weapp/upload`
+module.exports = {
+  enabledQcloud: false, // 是否开启腾讯云COS 上传功能
+  // 腾讯云COS 上传功能配置表
+  qcloud: {
+    appid: '1111111',
+    secretId: 'xxx',
+    secretKey: 'xxxxx',
+    bucket: 'xxxx',
+    region: 'sh',
+    prefix: 'what-ever/you-want',
+    overWrite: true,
+    headers: {
+      'Cache-Control': 'max-age=5184000'
     }
-};
-
-module.exports = config;
+  },
+  // 静态资源CDN 域名，配合CDN 功能实用，线上请确保在mp管理端已经注册域名
+  assetsCDN: 'https://res.jianhui.org/'
+}
