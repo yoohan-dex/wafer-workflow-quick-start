@@ -46,3 +46,4 @@ sh/
 sdk.config.json
 # other
 database.md
+dist/
